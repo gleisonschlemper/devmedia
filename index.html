@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../exercicioSait/style.css">
+    <title>Document</title>
+</head>
+<body> 
+
+<header>
+    
+<section id="menuPagina">
+
+    <div class="left">
+        <a href="" class="logoPagina">
+            <img src="https://www.kotas.com.br/blog/wp-content/uploads/2021/12/Devmedia.jpg" alt="" srcset="">  
+        </a> 
+    
+        <ol class="ol-carreiras" style="list-style-type: none">
+            <li class="li-carreiras">
+
+                <div  class="carreira" style="text-decoration: none;">
+                    Carreiras 
+                    <div class="flechaBaixo">
+                        <img src="../exercicioSait/fotos/seta-para-baixo.png" alt="" srcset="">
+                    </div>
+                </div>      
+
+                <ol class="ol-carreirasMostar">
+                    <li class="li-Mostrar">        
+                        <div class="list">
+                            <p style="color: rgb(62, 193, 236);font-size: 22px;">Comece aqui</p>
+                            <a href="">Carreira Front-end</a>  
+                            <a href="">Carreira Mobile</a>
+                            <a href="">Carreira Back-end</a>
+                        </div>
+
+                        <div class="list">
+                            <p style="color: rgb(62, 193, 236);font-size: 22px;">Tecnologias</p>
+                            <a href="">HTML</a>  
+                            <a href="">CSS</a>
+                            <a href="">Algoritmo</a>
+                            <a href="">JavaScript</a>
+                            <a href="">React</a>
+                            <a href="">React Native</a>
+                            <a href="">Node Js</a>
+                            <a href="">SQL</a>
+                            <a href="">MySQL</a>
+                        </div>
+
+                        <div class="list">
+                            <p style="color: rgb(62, 193, 236);font-size: 22px;">Engenharia</p>
+                            <a href="">UML</a>  
+                            <a href="">Scrum</a>
+                            <a href="">Levantamneto de<br> requisitos</a>
+                            <a href="">Padrões de projeto</a>
+                            <a href="">teste de software</a>
+                        </div>
+                    </li>
+                </ol>
+
+            </li>
+        </ol>
+    </div>
+    <!--left -->
+    
+    <div class="right">
+        <button class="botao">COMECE AGORA</button>
+
+        <a href="" class="pesquisa">
+            <img src="../exercicioSait/fotos/lupa.png" alt="" srcset="">
+        </a>
+
+        <div class="usuario" onclick="mostrarUsuario()">
+            <img src="../exercicioSait/fotos/usuario.png" alt="" srcset="">
+        </div>
+
+        <form class="cadastroUsuario"  method="post" action="">
+        <label for="">
+            Login:
+            <input type="email">
+        </label>
+
+        <label for="">
+            Senha:
+            <input type="password">
+        </label>
+
+        <a href=""><i>Esqueceu o login ou a senha?</i></a>
+
+        <input type="submit" name="" id="" class="enviarLogin">
+
+        <a href="">cadastre-se</a>
+        </fo>
+
+    </div>  
+    <!-- right -->
+
+</section>
+<!-- menuPagina  -->
+
+<secttion id="menuMobile">
+
+    <div class="mobileLogo">
+        <div class="mobile" onclick="mobile()">
+            <img src="../exercicioSait/fotos/menuhamburguer.png" alt="" srcset="">
+        </div>
+
+        <a href="" class="logo">
+            <strong>DEV</strong><p>MEDIA</p>
+        </a>
+    </div>
+    <!-- mobileLogo -->
+
+    <div class="usuarioPesquisa">
+            
+
+    </div>
+    <!-- usuarioPesquisa -->
+
+    <div class="navMobile">
+        <div class="fechar" onclick="fecharMobile()">
+            <p style="font-size: 25px">X</p>
+            <p>Fechar</p>
+        </div>
+
+        <div class="rolagemMobile">
+            <a href="">Assine</a>
+            <a href="">Carreira Front-end</a>
+            <a href="">Carreira Mobile</a>
+            <a href="">Carreira Back-end</a>
+            <a href="">Fale conosco</a>
+        </div>
+
+        <div class="tecnologiaMobile" onclick="tecnologia()">
+            <p>Tecnologias</p>
+
+            <div class="setaCima">
+                <img src="../exercicioSait/fotos/baixoS.png" alt="" srcset="">
+            </div>
+
+            <div class="setaBaixo">
+                <img src="../exercicioSait/fotos/cima.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="sobreTecnoMobile">
+            <a href="">HTML</a>
+            <a href="">CSS</a>
+            <a href="">Algoritmo</a>
+            <a href="">JavaScript</a>
+            <a href="">React</a>
+            <a href="">React Native</a>
+            <a href="">Node.js</a>
+            <a href="">SQL</a>
+            <a href="">MySQL</a>
+            <a href="">UML</a>
+            <a href="">Scrum</a>
+            <a href="">Levantamento de requisitos</a>
+            <a href="">Padrões de projeto</a>
+            <a href="">Teste de software</a>
+        </div>
+    </div>
+    <!-- navMobile -->
+
+</secttion>
+<!--menuMobile  -->
+
+<section id="navBar" >
+
+    <div class="sirene">
+        <img src="../exercicioSait/fotos/sirene.png" alt="" srcset="">
+    </div>
+
+    <h1 class="manual">Manual do programador iniciante.
+        <h1 style="color:#fff" class="iniciar">
+        como iniciar seus estudos
+        </h1>
+    </h1>
+
+    <a href="" class="gratis" style="text-decoration: none">
+            GRÁTIS ATÉ 15 DE MAIO
+    </a>
+
+</section>
+<!-- navBar -->
+
+<section id="frontEnd">
+        <div class="tituloFrontEnd">
+            <h1>Bem-vindo a <br>
+            carreira Front-end</h1>
+            <p>com a metodologia devMedia em pouco tempo você vai estar construindo aplicações incriveis e se tornar um programador front-End.</p>
+        <ul>
+        <li><p>20 anos ensinado programação</p></li><br>
+        <li><p>+ de 100 mil programadores formados</p></li>
+        </ul>
+        <a href="" class="comeceAgora">Comece agora</a>
+        </div>
+        <div class="logoAbertura">
+    <img src="../exercicioSait/fotos/imglOGO.png" alt="">
+        </div>
+</section>
+<!-- frontEnd  -->
+
+</header>
+
+<main>
+
+<section id="escolhaProfissao">
+
+    <strong>
+        <h1>Por que você deve investir nessa carreira</h1>
+    </strong>
+
+    <div class="motivosDeEscolher">
+
+        <div class="escolha">
+            <div class="logoEscolha">     
+                <img src="../exercicioSait/fotos/relampago.png" alt="" srcset="">
+            </div>
+            <p>Fácil e rápida de <br>aprender</p>
+        </div>
+
+        <div class="escolha">
+            <div class="logoEscolha">
+                <img src="../exercicioSait/fotos/pessoas.png" alt="" srcset="">
+            </div>
+            <p>tetx</p>
+        </div>
+
+        <div class="escolha">
+            <div class="logoEscolha"></div>
+            <p>tetx</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="devMEDIA">
+
+    <div class="logoDevMedia">
+        <img src="../exercicioSait/fotos/logoPessoa.jpeg" alt="" srcset="">
+    </div>
+    
+    <div class="sobreDevMedia">
+        <h1>Como a DevMedia vai transformar você me um programador front-end</h1>
+        <ul>
+            <li>Plano de estudo claro e objetivo</li>
+            <li>Você não vai mais se sentir perdido</li>
+            <li>Exercicios para aprimorar seu código</li>
+            <li>Construção de diversos projetos reais</li>
+            <li>Professores online para tirar dúvidas</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="nossaCarreira" onclick="carreira()">
+    <h1 class="carreiraAprender"> Nessa carreira você vai aprender as tecnologias:</h1>
+    
+    <div class="linguagens">
+
+        <div class="linguagem">
+            <strong>HTML</strong> 
+        </div>
+
+        <div class="linguagem">
+            <strong>CSS</strong> 
+        </div>
+
+        <div class="linguagem">
+            <strong>Algoritmo</strong> 
+        </div>
+
+        <div class="linguagem">
+            <strong>JavaScript</strong>  
+        </div>
+
+        <div class="linguagem">
+            <strong>React</strong>  
+        </div>
+
+    </div>
+
+    <h1 class="conograma">
+    Ver cronograma completo
+    </h1>
+</section>
+
+<section class="sobreLinguagem ">
+    <div class="linguagemSobre">
+
+        <ul class="basicoLinguagem">
+            <p>HTML</p>
+            <li>Introdução</li>
+            <li>Fundamentos</li>
+            <li>Tags Básicas</li>
+            <li>Meta tags</li>
+            <li>Listas</li>
+            <li>Tabelas</li>
+        </ul> 
+
+        <ul class="basicoLinguagem" >
+            <p>CSS</p>
+            <li>Introdução</li>
+            <li>Propriedades</li>
+            <li>Seletores</li>
+            <li>Background</li>
+            <li>Caixas (Box Model)</li>
+            <li>Posicionamento</li>
+            <li>Flexbox</li>
+            <li>Pseudo classes e <br>
+            elementos</li>
+            <li>Media Queries</li>
+        </ul> 
+
+        <ul class="basicoLinguagem">
+            <p>HTML</p>
+            <li>Introdução</li>
+            <li>Fundamentos</li>
+            <li>Tags Básicas</li>
+            <li>Meta tags</li>
+            <li>Listas</li>
+            <li>Tabelas</li>
+        </ul> 
+
+        <ul class="basicoLinguagem">
+            <p>HTML</p>
+            <li>Introdução</li>
+            <li>Fundamentos</li>
+            <li>Tags Básicas</li>
+            <li>Meta tags</li>
+            <li>Listas</li>
+            <li>Tabelas</li>
+        </ul> 
+
+        <ul class="basicoLinguagem">
+            <p>HTML</p>
+            <li>Introdução</li>
+            <li>Fundamentos</li>
+            <li>Tags Básicas</li>
+            <li>Meta tags</li>
+            <li>Listas</li>
+            <li>Tabelas</li>
+        </ul>
+
+    </div>
+        
+    <div class="projetoslinguagem">
+
+        <p>Projetos que você irá construir durante os estudos:</p>
+
+        <div class="listProjetos">
+
+            <ul>
+                <li>Página HTML</li>
+                <li>Página web estilizada</li>
+                <li>Páginas web estilizada com maior complexidade</li>
+                <li>Web site com navegação</li>
+                <li>Web site responsivo</li>
+                <li>Página web capaz de enviar dados para um servidor através de <br>
+                    formulários</li>
+            </ul>
+
+            <ul>
+                <li>Calculadora de porcentagem</li>
+                <li>Sistema de conversão de números</li>
+                <li>Aplicação de cálculo de juros</li>
+                <li>Aplicação que compara Salário x Inflação</li>
+            </ul>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<section id="missoes">
+    <div class="sobreMissao">
+        <h1>Aprenda através de missões práticas</h1>
+        <p>Seus estudos serão apresentados em forma de missões. A cada missão cumprida você ganha mais conhecimentos e executa um mini-projeto. Além de estimulante, esse método deixa mais claro para que serve cada uma das matérias que está aprendendo.</p>
+       <div class="missoes">
+           <div class="missao">
+            <strong>Fácil de seguir</strong> 
+           </div>
+           <div class="missao">
+            <strong>Maior entendimento</strong>  
+           </div>
+           <div class="missao">
+           <strong>Mais motivante</strong> 
+           </div>
+       </div>
+       
+    </div>
+    <div class="imgMissao">
+        <img src="../exercicioSait/fotos/missao.jpg" alt="" srcset="">
+    </div>
+</section>
+
+<section id="portfolio">
+<h1>Você vai construir esses projetos e montar seu portfólio completo</h1>
+<div class="projetosPortfolio">
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img1.jpg" alt="" srcset="">
+        </div>
+        <p>Primeira pagina HTML</p>
+    </div>
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img2.jpg" alt="" srcset="">
+        </div>
+        <p>pagina HTML com estilização</p>
+    </div>
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img3.jpg" alt="" srcset="">
+        </div>
+        <p>Pousada Secreta - home</p>
+    </div>
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img4.jpg" alt="" srcset="">
+        </div>
+        <p>Pousada Secreta - quartos</p>
+    </div>
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img5.jpg" alt="" srcset="">
+        </div>
+        <p>Clínica médica</p>
+    </div>
+    <div class="projetos">
+        <div class="img">
+            <img src="../exercicioSait/fotos/img1.jpg" alt="" srcset="">
+        </div>
+        <p>Clínica médica - responsivo</p>
+    </div>
+</div>
+</section>
+
+<section class="txt">
+
+</section>
+
+<section id="sliders">
+    <h1>Somos especialistas em formar programadores</h1>
+    <div class="sliders">
+        <div class="slidersConteiner">
+            <input type="radio" name="cardx" id="card1">
+            <input type="radio" name="cardx" id="card2">
+            <input type="radio" name="cardx" id="card3">
+            <input type="radio" name="cardx" id="card4">
+            <input type="radio" name="cardx" id="card5">
+            <input type="radio" name="cardx" id="card6">
+            <input type="radio" name="cardx" id="card7">
+            <input type="radio" name="cardx" id="card8">
+            <input type="radio" name="cardx" id="card9">
+            
+        
+            <div class="card s1" style="background-color: rgb(0, 0, 0)"></div>
+            <div class="card" style="background-color: rgb(111, 0, 255)"></div>
+            <div class="card" style="background-color: rgb(242, 255, 0)"></div>
+
+            <div class="card " style="background-color: red"></div>
+            <div class="card" style="background-color: rgb(0, 0, 0)"></div>
+            <div class="card" style="background-color: rgb(0, 0, 0)"></div>
+            
+            <div class="card" style="background-color: rgb(0, 0, 0)"></div>
+            <div class="card" style="background-color: rgb(0, 0, 0)"></div>
+            <div class="card" style="background-color: rgb(0, 0, 0)"></div>
+
+        </div>
+        <div class="pointer">
+            <label for="card1"></label>
+            <label for="card2"></label>
+            <label for="card3"></label>
+            <label for="card4"></label>
+            <label for="card5"></label>
+            <label for="card6"></label>
+            <label for="card7"></label>
+            <label for="card8"></label>
+            <label for="card9"></label>
+        </div>
+    </div>
+</section>
+</main>
+
+<script src="../exercicioSait/script.js"></script>
+</body>
+</html>
